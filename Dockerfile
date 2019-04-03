@@ -14,4 +14,6 @@ RUN apk add --no-cache curl fontconfig \
   && rm NotoSansCJKjp-hinted.zip \
   && fc-cache -fv
 
+RUN apk add make gcc g++
+
 ENV LANG ja_JP.UTF-8
